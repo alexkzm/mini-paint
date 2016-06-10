@@ -1,21 +1,21 @@
 //Assigns colors to boxes
-$(document).ready(function() {
+$(document).ready(() => {
 
-	var box =$('.box');
+	var box =$('.box')
 
-	$('.box').on('click', function() {
-    $(this).addClass('white');
+	$('.box').on('click', () => {
+    $(this).addClass('white')
   })
 
-  	$('.box').on('dblclick', function() {
-    $(this).removeClass('white');
+  	$('.box').on('dblclick', () => {
+    $(this).removeClass('white')
   })
 
     $('#reset').on('click', function() {
     $('.box').removeClass('white green');
   })
 //Assigns actions to buttons
-var color = 'white';
+let color = 'white';
 
 $('#red').on('click', function() {
     color = 'red';
