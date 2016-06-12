@@ -11,68 +11,67 @@ $(document).ready(() => {
   	$('.box').on('dblclick', () => {
     $(this).removeClass('white')
 
-$(document).ready(function() {
+$(document).ready(() => {
 
-	var box =$('.box');
+	let box =$('.box')
 
-	$('.box').on('click', function() {
-    $(this).addClass('white');
+	$('.box').on('click', () => {
+    $(this).addClass('white')
   })
 
-  	$('.box').on('dblclick', function() {
-    $(this).removeClass('white');
-
+  	$('.box').on('dblclick', () => {
+    $(this).removeClass('white')
   })
 
-    $('#reset').on('click', function() {
-    $('.box').removeClass('white green');
+    $('#reset').on('click', () => {
+    $('.box').removeClass('white green')
   })
 //Assigns actions to buttons
 
-let color = 'white';
+let color = 'white'
 
-$('#red').on('click', function() {
-    color = 'red';
+$('#red').on('click', () => {
+    color = 'red'
   })
 
-  $('#blue').on('click', function() {
-    color = 'blue';
+  $('#blue').on('click', () => {
+    color = 'blue'
   })
 
-  $('#green').on('click', function() {
-    color = 'green';
+  $('#green').on('click', () => {
+    color = 'green'
   })
 
-  $('#yellow').on('click', function() {
-    color = 'yellow';
+  $('#yellow').on('click', () => {
+    color = 'yellow'
   })
 
-  $('#white').on('click', function() {
-    color = 'white';
+  $('#white').on('click', () => {
+    color = 'white'
   })
 
-   $('.box').on('click', function() {
-    $(this).addClass(color);
+   $('.box').on('click', () => {
+    $(this).addClass(color)
   })
 
-  $('.box').on('dblclick', function() {
-    $(this).removeClass(color);
+  $('.box').on('dblclick', () => {
+    $(this).removeClass(color)
   })
 
-  $('#reset').on('click', function() {
+  $('#reset').on('click', () => {
     $('.box').removeClass(color)
   })
 })
 
 //Changes color back to black on double click
- $('.box').removeClass('red blue green yellow white');
+ $('.box').removeClass('red blue green yellow white')
 
- var colors = 'white green red blue yellow';
+ let colors = 'white green red blue yellow'
 
-  $('.box').on('dblclick', function() {
+  $('.box').on('dblclick', () => {
     $(this).removeClass(colors);
   })
 
-  $('#reset').on('click', function() {
+  $('#reset').on('click', () => {
     $('.box').removeClass(colors)
   })
